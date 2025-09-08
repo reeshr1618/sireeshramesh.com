@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>What will the world need to implement AI</title>
+  <title>Scaling LLMs Won't Get Us to Better Enterprise AI</title>
   <style>
     body {
       max-width: 700px;
@@ -27,9 +27,56 @@
   </style>
 </head>
 <body>
-  <h1>What will the world need to implement AI</h1>
+  <h1>Scaling LLMs Won't Get Us to Better Enterprise AI</h1>
 
-  <p>...still musing on this</p>
+  <p>if you look at how ai is evolving inside businesses, it doesn’t look much like the lab story</p>
+<p>today’s frontier models are great at benchmarks. arc, mmlu, math olympiads. the problem is those benchmarks don’t look anything like work. real employees don’t sit around answering trivia.</p>
+<p>humans working look very different from chatgpt.</p>
+<ul>
+  <li>humans get better over time, task after task</li>
+  <li>humans learn through back and forth, not input → output</li>
+  <li>humans take individual lessons and generalize them to other domains</li>
+</ul>
+<p>so the work of making ai useful in business runs perpendicular to the pursuit of agi. even if you get to gpt-10, a chatbot interface still can’t do most of what a junior analyst does. agents need context. they need rubrics to know if they’re doing well. they need continuous feedback loops, not one-off inputs.</p>
+<p>the evolution here is clear:</p>
+<ul>
+  <li>first we had rlhf, where humans rated outputs</li>
+  <li>then rlaif, where models judged each other</li>
+  <li>then rlvr, where rubrics started to define success</li>
+  <li>next we’ll have ai generating the rubrics, reasoning through them in language, training on both the output and the logic behind the output</li>
+</ul>
+<p>that last step matters. because it mirrors how humans think: you don’t just grade the answer, you also grade the reasoning that got there.</p>
+<p>what does this world look like? a model dropped into a live environment, constantly updated with context the same way an employee gets emails, dashboards, new data. someone has to build the pipes — access, permissioning, monitoring — so agents can soak that context.</p>
+<p>the agent then tackles small tasks. it reasons, evaluates itself against a rubric, improves over time, generalizes across similar tasks. the hardest part is converting messy business inputs into natural language the model can actually see. web pages, files, spreadsheets → all need to be translated into something a language model can reason over.</p>
+<p>the result is a system that looks like a new hire: dropped into an environment, given tasks, evaluated, and trained to get better. except this new hire doesn’t quit, doesn’t forget, and scales infinitely once you get the set-up right.</p>
+<p>so where do humans fit? that’s the wrong first question. the simpler one is: where would an agi fit inside a company at all?</p>
+<p>labs train models to reason at a phd level. businesses want ai to do the job of a junior analyst. paradoxically, models today are better at zero-shot executive reasoning than they are at repetitive analyst workflows. which is why so much enterprise adoption has looked like automation. rules-based systems wrapping llms. coding assistants that can be evaluated true/false. because code is already a natural language.</p>
+<p>enterprises don’t actually want agi. they want competitiveness. that usually means two things:</p>
+<ul>
+  <li>lower costs → more pricing flexibility, more cash for r&amp;d</li>
+  <li>higher revenue → stealing share from competitors</li>
+</ul>
+<p>and they want to do it without blowing up the core business that generates today’s cash flows. that’s why incumbents miss platform shifts. microsoft didn’t catch the iphone wave. blackberry couldn’t adapt. they were protecting the core.</p>
+<p>when it comes to ai, enterprises care about five things:</p>
+<ol>
+  <li>services to help them deploy</li>
+  <li>change management to get people to use it</li>
+  <li>specificity to their context</li>
+  <li>low risk</li>
+  <li>fast, high impact</li>
+</ol>
+<p>that matrix looks nothing like the labs’ matrix. labs are building models that could replace the ceo. enterprises want to replace bpo’d functions and junior analysts. they want quick wins. not fundamental reorganizations.</p>
+<p>that means the evals for enterprise ai look different too. you’re not grading a model on olympiad-level proofs. you’re asking: can this agent learn sequentially, improve with context, and zero-shot onto a slightly different task tomorrow?</p>
+<p>which is why code took off first. because it fit the lab evals and the enterprise evals at the same time. it’s natural language. it’s deterministic. correctness can be tested instantly. there is no equivalent eval today for “is this dcf built correctly?”</p>
+<p>so what has to be built:</p>
+<ul>
+  <li>pipelines that convert enterprise context into natural language</li>
+  <li>pretraining models on that context</li>
+  <li>reasoning chains that get to outputs</li>
+  <li>reinforcement on both the reasoning and the outputs</li>
+</ul>
+<p>this is where humans come in. not as the agent itself, but as the scaffolding. deciding what context matters. converting that context into somet
+
 
   <nav>
   <a href="index.html">home</a>
